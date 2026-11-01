@@ -53,7 +53,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.brown,
+        backgroundColor: const Color.fromARGB(255, 218, 91, 7),
         title: const Text(
           'Application multitaches',
           style: TextStyle(
@@ -76,7 +76,7 @@ class _HomePageState extends State<HomePage> {
         onTap: changerPage,
         type: BottomNavigationBarType.fixed,
         backgroundColor: Colors.white,
-        selectedItemColor: Colors.brown,
+        selectedItemColor: const Color.fromARGB(255, 218, 91, 7),
         unselectedItemColor: Colors.grey,
         showSelectedLabels: true,
         showUnselectedLabels: true,
@@ -86,8 +86,8 @@ class _HomePageState extends State<HomePage> {
             label: 'Accueil',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.shopping_cart),
-            label: 'Panier',
+            icon: Icon(Icons.map_rounded),
+            label: 'Carte',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
